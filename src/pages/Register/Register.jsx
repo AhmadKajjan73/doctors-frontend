@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-require("dotenv").config();
 
 import { Link, useHistory } from "react-router-dom";
 import { connect } from "react-redux";
@@ -15,6 +14,8 @@ import { changeIsAdminStatus } from "../../actions/adminActions/isAdmin";
 
 import validation from "./validation";
 import submitRegister from "./submit";
+
+require("dotenv").config();
 
 var Register = ({ changePageLoadingStatus, changeIsAdminStatus, setUser }) => {
   const [errors, setErrors] = useState({

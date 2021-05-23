@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-require("dotenv").config();
 
 import { FaArrowCircleDown, FaArrowCircleUp } from "react-icons/fa";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.bubble.css";
 
+require("dotenv").config();
 const ConsultationCard = ({ consultation }) => {
   let {
     question,

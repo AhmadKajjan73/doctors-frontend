@@ -1,9 +1,10 @@
 import React, { useState, useRef } from "react";
-require("dotenv").config();
 
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { useSpring, animated } from "@react-spring/web";
+
+require("dotenv").config();
 
 const calc = (x, y, rect) => [
   -(y - rect.top - rect.height / 2) / 5,

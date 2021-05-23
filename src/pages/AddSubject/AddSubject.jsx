@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-require("dotenv").config();
 
 import { connect } from "react-redux";
 import { useHistory } from "react-router-dom";
@@ -26,6 +25,8 @@ import validation from "./validation";
 import submitAddSubject from "./submit";
 
 import "react-quill/dist/quill.snow.css";
+
+require("dotenv").config();
 
 const modules = {
   toolbar: [

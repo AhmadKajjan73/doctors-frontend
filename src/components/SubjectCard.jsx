@@ -1,9 +1,9 @@
 import React from "react";
-require("dotenv").config();
 
 import { Link } from "react-router-dom";
 import { FaEye } from "react-icons/fa";
 
+require("dotenv").config();
 /*
  id: subject._id,
           title: subject.title,

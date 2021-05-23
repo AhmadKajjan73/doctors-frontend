@@ -1,5 +1,4 @@
 import React from "react";
-require("dotenv").config();
 
 import { connect } from "react-redux";
 import ReactQuill from "react-quill";
@@ -16,6 +15,7 @@ import submitAddSubject from "./submit";
 
 import "react-quill/dist/quill.bubble.css";
 
+require("dotenv").config();
 const SubjectPreview = ({ subject, userInfo }) => {
   console.log(subject);
   const { id, image, title, body, selectedTags } = subject;

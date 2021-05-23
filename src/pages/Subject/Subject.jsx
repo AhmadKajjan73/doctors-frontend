@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-require("dotenv").config();
 
 import { connect } from "react-redux";
 import { useHistory } from "react-router-dom";
@@ -19,6 +18,7 @@ import { ChangeSubjectForDelete } from "../../actions/adminActions/subject";
 
 import "react-quill/dist/quill.bubble.css";
 
+require("dotenv").config();
 const Subject = ({
   id,
   userInfo,

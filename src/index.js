@@ -1,5 +1,5 @@
 import React from "react";
-require("dotenv").config();
+
 import ReactDOM from "react-dom";
 import App from "./App";
 import { Provider as ReduxProvider } from "react-redux";
@@ -10,6 +10,8 @@ import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 import store from "./store";
 import "./index.css";
 import "react-redux-toastr/lib/css/react-redux-toastr.min.css";
+
+require("dotenv").config();
 
 ReactDOM.render(
   <React.StrictMode>

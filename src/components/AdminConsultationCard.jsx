@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-require("dotenv").config();
 
 import { toastr } from "react-redux-toastr";
 import TextareaAutosize from "react-textarea-autosize";
@@ -14,6 +13,8 @@ import "react-quill/dist/quill.bubble.css";
 import { required, minLength } from "../helpers/validations";
 import CustomButton from "./CustomButton";
 import consultationApi from "../api/consultation";
+
+require("dotenv").config();
 
 const ConsultationCard = ({
   consultation,

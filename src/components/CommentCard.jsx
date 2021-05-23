@@ -3,7 +3,6 @@
 // body: { type: String, required: true },
 // replayTo: { type: String, default: null, required: false },
 import React, { useState } from "react";
-require("dotenv").config();
 
 import { connect } from "react-redux";
 import { toastr } from "react-redux-toastr";
@@ -15,6 +14,8 @@ import CustomButton from "./CustomButton";
 import Comment from "./Comment";
 
 import commentApi from "../api/comment";
+
+require("dotenv").config();
 
 var CommentCard = ({ comment, userInfo, refreshSubject }) => {
   const { author, body, createdAt } = comment;
