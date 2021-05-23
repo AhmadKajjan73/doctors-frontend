@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+require("dotenv").config();
 
 import { FaArrowCircleDown, FaArrowCircleUp } from "react-icons/fa";
 import ReactQuill from "react-quill";

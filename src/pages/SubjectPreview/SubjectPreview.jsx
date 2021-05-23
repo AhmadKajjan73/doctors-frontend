@@ -1,4 +1,5 @@
 import React from "react";
+require("dotenv").config();
 
 import { connect } from "react-redux";
 import ReactQuill from "react-quill";

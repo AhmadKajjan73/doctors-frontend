@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+require("dotenv").config();
 
 import { connect } from "react-redux";
 import { useHistory } from "react-router-dom";

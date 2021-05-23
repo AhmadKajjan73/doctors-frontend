@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+require("dotenv").config();
+
 import { Link, useHistory } from "react-router-dom";
 import { connect } from "react-redux";
 

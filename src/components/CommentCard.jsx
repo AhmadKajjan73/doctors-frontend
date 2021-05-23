@@ -3,6 +3,7 @@
 // body: { type: String, required: true },
 // replayTo: { type: String, default: null, required: false },
 import React, { useState } from "react";
+require("dotenv").config();
 
 import { connect } from "react-redux";
 import { toastr } from "react-redux-toastr";

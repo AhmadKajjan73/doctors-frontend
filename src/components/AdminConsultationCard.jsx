@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+require("dotenv").config();
 
 import { toastr } from "react-redux-toastr";
 import TextareaAutosize from "react-textarea-autosize";
