@@ -63,7 +63,8 @@ var CommentCard = ({ comment, userInfo, refreshSubject }) => {
         </div>
       </div>
       <div className="flex flex-row p-4 space-x-2">
-        {(userInfo && userInfo.id === author._id) || userInfo.usertype === 0 ? (
+        {(userInfo && userInfo.id === author._id) ||
+        (userInfo && userInfo.usertype === 0) ? (
           <CustomButton
             onClick={(e) => {
               deleteComment();
