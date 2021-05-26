@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^12.1.10",
     "apisauce": "^2.1.1",
     "autoprefixer": "9",
+    "firebase-tools": "^9.11.0",
     "html-react-parser": "^1.2.6",
     "jsonwebtoken": "^8.5.1",
     "leva": "^0.9.9",

@@ -9,7 +9,6 @@ import { toastr } from "react-redux-toastr";
 
 import { FaEdit, FaMinusCircle } from "react-icons/fa";
 
-import PageLoader from "./PageLoader";
 import CustomButton from "./CustomButton";
 import Comment from "./Comment";
 
@@ -64,7 +63,7 @@ var CommentCard = ({ comment, userInfo, refreshSubject }) => {
         </div>
       </div>
       <div className="flex flex-row p-4 space-x-2">
-        {userInfo.id === author._id || userInfo.usertype === 0 ? (
+        {(userInfo && userInfo.id === author._id) || userInfo.usertype === 0 ? (
           <CustomButton
             onClick={(e) => {
               deleteComment();
@@ -74,7 +73,7 @@ var CommentCard = ({ comment, userInfo, refreshSubject }) => {
             <div>Delete</div>
           </CustomButton>
         ) : null}
-        {userInfo.id === author._id ? (
+        {userInfo && userInfo.id === author._id ? (
           <CustomButton
             onClick={(e) => {
               setShowComment(true);
